@@ -7,7 +7,6 @@ html {
 body {
   height: 100%;
   font-family: "Helvetica Neue";
-  font-weight: light;
   line-height: 1.5;
 }
 
@@ -48,6 +47,8 @@ article {
   width: 100%;
   text-align: center;
   vertical-align: middle;
+  background-size: cover;
+  background-position: 50% 0%
 }
 
 article > .inner {
@@ -75,7 +76,6 @@ article > .inner {
 
 #wolf-of-wall-street {
   background-color: yellow;
-  background-size: cover;
   color: black;
   padding-top: 60px;
 }

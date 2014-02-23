@@ -15,14 +15,36 @@ $(document).ready(function(){
       console.log(data);
       TMDB.baseURL = data.images.base_url;
       TMDB.size = data.images.poster_sizes[3];
-      TMDB.backdropSizes = data.images.backdrop_sizes[2];
+      TMDB.backdropSizes = data.images.backdrop_sizes[0];
     }
   };
 
   var films = {
-    filmIDs: ['106646', '44826', '11324', '1422'],
-    filmContainers: [$('#wolf-of-wall-street'), $('#hugo'), $('#shutter-island'), $('departed')]
+    filmIDs: [
+    '106646',
+    '44826',
+    '11324',
+    '1422',
+    '2567',
+    '3131',
+    '524',
+    '1598',
+    '769'
+    ],
+    filmContainers: [
+    $('#wolf-of-wall-street'), 
+    $('#hugo'), 
+    $('#shutter-island'), 
+    $('#departed'),
+    $('#aviator'),
+    $('#gangs'),
+    $('#casino'),
+    $('#cape-fear'),
+    $('#goodfellas')
+    ]
   };
+
+
 
   var wows = {
     ID: '106646',
@@ -278,6 +300,12 @@ $(document).ready(function(){
   var app = {
     init: function(){
       TMDB.getConfig();
+      // for (var i = 0; i < films.filmIDs.length; i++) {
+      //   console.log(films.filmIDs[i]);
+      //   app.getFilmDetails(films.filmIDs[i]);
+      // };
+
+
       wows.getFilmDetails();
       hugo.getFilmDetails();
       shutter.getFilmDetails();
@@ -288,12 +316,20 @@ $(document).ready(function(){
       cape.getFilmDetails();
       goodfellas.getFilmDetails();
     },
+
+    // getFilmDetails: function(id){
+    //   $.get(TMDB.URL + '/movie/' + id + '?api_key=' + TMDB.API, function(data){
+    //     console.log(data.title);
+    //   });
+    
   };
 
-
-  app.init();
-  window.app = app;
-  window.TMDB = TMDB;
-  window.wows = wows;
+  $.adaptiveBackground.run({
+    normalizeTextColor: true,
+  });
+  // app.init();
+  // window.app = app;
+  // window.TMDB = TMDB;
+  // window.wows = wows;
 
 });
