@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   var TMDB = {
     URL: 'http://api.themoviedb.org/3',
     API: '20c37a7bb085a194a8781df8dd193ac1',
@@ -32,9 +32,9 @@ $(document).ready(function(){
     '769'
     ],
     filmContainers: [
-    $('#wolf-of-wall-street'), 
-    $('#hugo'), 
-    $('#shutter-island'), 
+    $('#wolf-of-wall-street'),
+    $('#hugo'),
+    $('#shutter-island'),
     $('#departed'),
     $('#aviator'),
     $('#gangs'),
@@ -52,7 +52,7 @@ $(document).ready(function(){
     backdropPath: '',
     posterPath: '',
     posterEl: $('#wolf-of-wall-street img'),
-    title: '',
+    title: 'Wolf of Wall Street',
     titleEl: $('#wolf-of-wall-street h1'),
     overview: '',
     overviewEl: $('#wolf-of-wall-street p'),
@@ -68,7 +68,7 @@ $(document).ready(function(){
       wows.overview = data.overview;
       wows.backdropPath = data.backdrop_path;
 
-      
+
       $('#wolf-of-wall-street').css('background-image', 'url("' + TMDB.baseURL + TMDB.backdropSizes + wows.backdropPath + '")');
       // $('#wolf-of-wall-street').css('background-color', 'blue');
 
@@ -81,7 +81,7 @@ $(document).ready(function(){
       if (wows.posterPath) {
         // this.posterEl.attr('src', TMDB.baseURL + TMDB.size + wows.posterPath);
       }
-    },   
+    },
   };
 
   var hugo = {
@@ -105,7 +105,7 @@ $(document).ready(function(){
       hugo.overview = data.overview;
       hugo.backdropPath = data.backdrop_path;
 
-      
+
       $('#hugo').css('background-image', 'url("' + TMDB.baseURL + TMDB.backdropSizes + hugo.backdropPath + '")');
 
 
@@ -300,10 +300,10 @@ $(document).ready(function(){
   var app = {
     init: function(){
       TMDB.getConfig();
-      // for (var i = 0; i < films.filmIDs.length; i++) {
-      //   console.log(films.filmIDs[i]);
-      //   app.getFilmDetails(films.filmIDs[i]);
-      // };
+      for (var i = 0; i < films.filmIDs.length; i++) {
+        console.log(films.filmIDs[i]);
+        app.getFilmDetails(films.filmIDs[i]);
+      };
 
 
       wows.getFilmDetails();
@@ -321,15 +321,15 @@ $(document).ready(function(){
     //   $.get(TMDB.URL + '/movie/' + id + '?api_key=' + TMDB.API, function(data){
     //     console.log(data.title);
     //   });
-    
+
   };
 
-  $.adaptiveBackground.run({
-    normalizeTextColor: true,
-  });
-  // app.init();
-  // window.app = app;
-  // window.TMDB = TMDB;
-  // window.wows = wows;
+  // $.adaptiveBackground.run({
+  //   normalizeTextColor: true,
+  // });
+  app.init();
+  window.app = app;
+  window.TMDB = TMDB;
+  window.wows = wows;
 
 });
