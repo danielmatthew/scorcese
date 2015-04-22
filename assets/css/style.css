@@ -54,7 +54,8 @@ article > .inner {
 .film-poster {
   width: 342px;
   margin-right: 50px;
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+  transform: rotate(-2deg); }
 
 .meta {
   text-align: left;

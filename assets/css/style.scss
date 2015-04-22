@@ -7,7 +7,6 @@ $abril: 'Abril Fatface', cursive;
 $fjalla: 'Fjalla One', sans-serif;
 $oswald: 'Oswald', sans-serif;
 
-
 @mixin background-check($colour) {
   @if lightness($colour) < 50% {
     color: #f3f3f3;
@@ -83,6 +82,7 @@ article > .inner {
   width: 342px;
   margin-right: 50px;
   box-shadow: 0 0px 10px rgba(0,0,0,0.4);
+  transform: rotate(-2deg);
 }
 
 .meta {
