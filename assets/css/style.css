@@ -4,7 +4,7 @@ html {
 
 body {
   height: 100%;
-  font-family: "Helvetica Neue";
+  font-family: 'Merriweather', serif;
   line-height: 1.5; }
 
 #timeline {
@@ -63,35 +63,56 @@ article > .inner {
 
 #wolf-of-wall-street {
   background-color: #ffb91e;
-  color: black;
-  padding-top: 60px; }
+  /* color: black; */
+  color: #333; }
+  #wolf-of-wall-street .title {
+    font-family: "Lato", sans-serif; }
 
 #hugo {
   background-color: #001F3F;
-  color: #fff; }
+  /* color: #fff; */
+  /* color: invert(#001f33); */
+  color: #f3f3f3; }
+  #hugo .title {
+    font-family: "Oswald", sans-serif; }
 
 #shutter-island {
   background-color: #111;
   color: #ddd; }
+  #shutter-island .title {
+    font-family: "PT Sans", sans-serif; }
 
 #departed {
   background-color: #A50E2D;
   color: #fff; }
+  #departed .title {
+    font-family: "Montserrat", sans-serif; }
 
 #aviator {
   background-color: #d0d0d2; }
+  #aviator .title {
+    font-family: "Fjalla One", sans-serif; }
 
 #gangs {
   background-color: #D0A556; }
+  #gangs .title {
+    font-family: "Abril Fatface", cursive; }
 
 #casino {
   background-color: #981b17;
   color: #fff; }
+  #casino .title {
+    font-family: "Oswald", sans-serif; }
 
 #cape-fear {
-  background-color: #9886A7; }
+  background-color: #9886A7;
+  color: #fff; }
+  #cape-fear .title {
+    font-family: "Fjalla One", sans-serif; }
 
 #goodfellas {
   background-color: #96bbce; }
+  #goodfellas .title {
+    font-family: "Abril Fatface", cursive; }
 
 /*# sourceMappingURL=style.css.map */

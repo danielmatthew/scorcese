@@ -1,12 +1,29 @@
 /* Write your CSS! */
 
+$lato: 'Lato', sans-serif;
+$ptsans: 'PT Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$abril: 'Abril Fatface', cursive;
+$fjalla: 'Fjalla One', sans-serif;
+$oswald: 'Oswald', sans-serif;
+
+
+@mixin background-check($colour) {
+  @if lightness($colour) < 50% {
+    color: #f3f3f3;
+  }
+  @else {
+    color: #333;
+  }
+}
+
 html {
   height: 100%;
 }
 
 body {
   height: 100%;
-  font-family: "Helvetica Neue";
+  font-family: 'Merriweather', serif;
   line-height: 1.5;
 }
 
@@ -76,43 +93,79 @@ article > .inner {
 
 #wolf-of-wall-street {
   background-color: #ffb91e;
-  color: black;
-  padding-top: 60px;
+  /* color: black; */
+  @include background-check(#ffb91e);
+
+  .title {
+    font-family: $lato;
+  }
 }
 
 #hugo {
   background-color: #001F3F;
-  color: #fff;
+  /* color: #fff; */
+  /* color: invert(#001f33); */
+  @include background-check(#001F3F);
+
+  .title {
+    font-family: $oswald;
+
+  }
 }
 
 #shutter-island {
   background-color: #111;
   color: #ddd;
+
+  .title {
+    font-family: $ptsans;
+  }
 }
 
 #departed {
   background-color: #A50E2D;
   color: #fff;
+
+  .title {
+    font-family: $montserrat;
+  }
 }
 
 #aviator {
   background-color: #d0d0d2;
+  .title {
+    font-family: $fjalla;
+  }
 }
 
 #gangs {
   background-color: #D0A556;
+  .title {
+    font-family: $abril;
+  }
 }
 
 #casino {
   background-color: #981b17;
   color: #fff;
+  .title {
+    font-family: $oswald;
+  }
 }
 
 
 #cape-fear {
   background-color: #9886A7;
+  color: #fff;
+
+  .title {
+    font-family: $fjalla;
+  }
 }
 
 #goodfellas {
   background-color: #96bbce;
+  .title {
+    font-family: $abril;
+  }
 }
