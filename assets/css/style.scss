@@ -7,6 +7,12 @@ $abril: 'Abril Fatface', cursive;
 $fjalla: 'Fjalla One', sans-serif;
 $oswald: 'Oswald', sans-serif;
 
+$blendmode: overlay;
+
+$medium-screen: 40em;
+$large-screen: 53.75em;
+
+
 @mixin background-check($colour) {
   @if lightness($colour) < 50% {
     color: #f3f3f3;
@@ -64,7 +70,7 @@ article {
   text-align: center;
   vertical-align: middle;
   background-size: cover;
-  background-position: 50% 0%
+  background-position: 50% 0%;
 }
 
 article > .inner {
@@ -79,20 +85,41 @@ article > .inner {
 }
 
 .film-poster {
-  width: 342px;
-  margin-right: 50px;
+
+  width: 40%;
+  margin-right: 5%;
   box-shadow: 0 0px 10px rgba(0,0,0,0.4);
   transform: rotate(-2deg);
+
+  @media (min-width: $medium-screen) {
+    width: 342px;
+    margin-right: 50px;
+  }
 }
 
 .meta {
   text-align: left;
   zoom: 1;
-  width: 40%;
+  padding: 1em 1em 0;
+
+  @media (min-width: $medium-screen) {
+    padding: 0;
+    width: 40%;
+  }
+}
+
+.title {
+  text-align: center;
+
+  @media (min-width: $medium-screen) {
+    text-align: left;
+  }
 }
 
 #wolf-of-wall-street {
+  background-image: url('/assets/wows-bg.jpg');
   background-color: #ffb91e;
+  background-blend-mode: $blendmode;
   /* color: black; */
   @include background-check(#ffb91e);
 
@@ -103,6 +130,8 @@ article > .inner {
 
 #hugo {
   background-color: #001F3F;
+  background-image: url('/assets/hugo-bg.jpg');
+  background-blend-mode: $blendmode;
   /* color: #fff; */
   /* color: invert(#001f33); */
   @include background-check(#001F3F);
@@ -115,6 +144,8 @@ article > .inner {
 
 #shutter-island {
   background-color: #111;
+  background-image: url('/assets/shutter-bg.jpg');
+  background-blend-mode: $blendmode;
   color: #ddd;
 
   .title {
@@ -124,6 +155,8 @@ article > .inner {
 
 #departed {
   background-color: #A50E2D;
+  background-image: url('/assets/departed-bg.jpg');
+  background-blend-mode: $blendmode;
   color: #fff;
 
   .title {
@@ -133,6 +166,8 @@ article > .inner {
 
 #aviator {
   background-color: #d0d0d2;
+  background-image: url('/assets/aviator-bg.jpg');
+  background-blend-mode: $blendmode;
   .title {
     font-family: $fjalla;
   }
@@ -140,6 +175,8 @@ article > .inner {
 
 #gangs {
   background-color: #D0A556;
+  background-image: url('/assets/gangs-bg.jpg');
+  background-blend-mode: $blendmode;
   .title {
     font-family: $abril;
   }
@@ -147,6 +184,8 @@ article > .inner {
 
 #casino {
   background-color: #981b17;
+  background-image: url('/assets/casino-bg.jpg');
+  background-blend-mode: $blendmode;
   color: #fff;
   .title {
     font-family: $oswald;
@@ -156,6 +195,8 @@ article > .inner {
 
 #cape-fear {
   background-color: #9886A7;
+  background-image: url('/assets/capefear-bg.jpg');
+  background-blend-mode: $blendmode;
   color: #fff;
 
   .title {
@@ -165,6 +206,8 @@ article > .inner {
 
 #goodfellas {
   background-color: #96bbce;
+  background-image: url('/assets/goodfellas-bg.jpg');
+  background-blend-mode: $blendmode;
   .title {
     font-family: $abril;
   }

@@ -52,18 +52,34 @@ article > .inner {
   vertical-align: middle; }
 
 .film-poster {
-  width: 342px;
-  margin-right: 50px;
+  width: 40%;
+  margin-right: 5%;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
   transform: rotate(-2deg); }
+  @media (min-width: 40em) {
+    .film-poster {
+      width: 342px;
+      margin-right: 50px; } }
 
 .meta {
   text-align: left;
   zoom: 1;
-  width: 40%; }
+  padding: 1em 1em 0; }
+  @media (min-width: 40em) {
+    .meta {
+      padding: 0;
+      width: 40%; } }
+
+.title {
+  text-align: center; }
+  @media (min-width: 40em) {
+    .title {
+      text-align: left; } }
 
 #wolf-of-wall-street {
+  background-image: url("/assets/wows-bg.jpg");
   background-color: #ffb91e;
+  background-blend-mode: overlay;
   /* color: black; */
   color: #333; }
   #wolf-of-wall-street .title {
@@ -71,6 +87,8 @@ article > .inner {
 
 #hugo {
   background-color: #001F3F;
+  background-image: url("/assets/hugo-bg.jpg");
+  background-blend-mode: overlay;
   /* color: #fff; */
   /* color: invert(#001f33); */
   color: #f3f3f3; }
@@ -79,40 +97,54 @@ article > .inner {
 
 #shutter-island {
   background-color: #111;
+  background-image: url("/assets/shutter-bg.jpg");
+  background-blend-mode: overlay;
   color: #ddd; }
   #shutter-island .title {
     font-family: "PT Sans", sans-serif; }
 
 #departed {
   background-color: #A50E2D;
+  background-image: url("/assets/departed-bg.jpg");
+  background-blend-mode: overlay;
   color: #fff; }
   #departed .title {
     font-family: "Montserrat", sans-serif; }
 
 #aviator {
-  background-color: #d0d0d2; }
+  background-color: #d0d0d2;
+  background-image: url("/assets/aviator-bg.jpg");
+  background-blend-mode: overlay; }
   #aviator .title {
     font-family: "Fjalla One", sans-serif; }
 
 #gangs {
-  background-color: #D0A556; }
+  background-color: #D0A556;
+  background-image: url("/assets/gangs-bg.jpg");
+  background-blend-mode: overlay; }
   #gangs .title {
     font-family: "Abril Fatface", cursive; }
 
 #casino {
   background-color: #981b17;
+  background-image: url("/assets/casino-bg.jpg");
+  background-blend-mode: overlay;
   color: #fff; }
   #casino .title {
     font-family: "Oswald", sans-serif; }
 
 #cape-fear {
   background-color: #9886A7;
+  background-image: url("/assets/capefear-bg.jpg");
+  background-blend-mode: overlay;
   color: #fff; }
   #cape-fear .title {
     font-family: "Fjalla One", sans-serif; }
 
 #goodfellas {
-  background-color: #96bbce; }
+  background-color: #96bbce;
+  background-image: url("/assets/goodfellas-bg.jpg");
+  background-blend-mode: overlay; }
   #goodfellas .title {
     font-family: "Abril Fatface", cursive; }
 
