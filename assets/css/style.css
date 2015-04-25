@@ -77,7 +77,7 @@ article > .inner {
       text-align: left; } }
 
 #wolf-of-wall-street {
-  background-image: url("../assets/wows-bg.jpg");
+  background-image: url("../wows-bg.jpg");
   background-color: #ffb91e;
   background-blend-mode: overlay;
   /* color: black; */
@@ -87,7 +87,7 @@ article > .inner {
 
 #hugo {
   background-color: #001F3F;
-  background-image: url("../assets/hugo-bg.jpg");
+  background-image: url("../hugo-bg.jpg");
   background-blend-mode: overlay;
   /* color: #fff; */
   /* color: invert(#001f33); */
@@ -97,7 +97,7 @@ article > .inner {
 
 #shutter-island {
   background-color: #111;
-  background-image: url("../assets/shutter-bg.jpg");
+  background-image: url("../shutter-bg.jpg");
   background-blend-mode: overlay;
   color: #ddd; }
   #shutter-island .title {
@@ -105,7 +105,7 @@ article > .inner {
 
 #departed {
   background-color: #A50E2D;
-  background-image: url("../assets/departed-bg.jpg");
+  background-image: url("../departed-bg.jpg");
   background-blend-mode: overlay;
   color: #fff; }
   #departed .title {
@@ -113,21 +113,21 @@ article > .inner {
 
 #aviator {
   background-color: #d0d0d2;
-  background-image: url("../assets/aviator-bg.jpg");
+  background-image: url("../aviator-bg.jpg");
   background-blend-mode: overlay; }
   #aviator .title {
     font-family: "Fjalla One", sans-serif; }
 
 #gangs {
   background-color: #D0A556;
-  background-image: url("../assets/gangs-bg.jpg");
+  background-image: url("../gangs-bg.jpg");
   background-blend-mode: overlay; }
   #gangs .title {
     font-family: "Abril Fatface", cursive; }
 
 #casino {
   background-color: #981b17;
-  background-image: url("../assets/casino-bg.jpg");
+  background-image: url("../casino-bg.jpg");
   background-blend-mode: overlay;
   color: #fff; }
   #casino .title {
@@ -135,7 +135,7 @@ article > .inner {
 
 #cape-fear {
   background-color: #9886A7;
-  background-image: url("../assets/capefear-bg.jpg");
+  background-image: url("../capefear-bg.jpg");
   background-blend-mode: overlay;
   color: #fff; }
   #cape-fear .title {
@@ -143,7 +143,7 @@ article > .inner {
 
 #goodfellas {
   background-color: #96bbce;
-  background-image: url("../assets/goodfellas-bg.jpg");
+  background-image: url("../goodfellas-bg.jpg");
   background-blend-mode: overlay; }
   #goodfellas .title {
     font-family: "Abril Fatface", cursive; }
